@@ -31,7 +31,6 @@ public class Candidate {
 
 
     private String address;
-
-
     private String bio;
+    private String phone;
 }

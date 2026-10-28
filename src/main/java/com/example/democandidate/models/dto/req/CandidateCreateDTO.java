@@ -18,7 +18,11 @@ public record CandidateCreateDTO(
         Integer age,
 
         @Min(value = 0, message = "Số năm kinh nghiệm không được nhỏ hơn 0")
-        Integer yearsOfExperience
+        Integer yearsOfExperience,
+
+        @NotBlank(message = "Số điện thoại không được để trống")
+        @Pattern(regexp = "^0[35789]\\d{8}$", message = "Số điện thoại không hợp lệ")
+        String phone
 
 ) {
 }

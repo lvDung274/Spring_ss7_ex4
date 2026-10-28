@@ -29,6 +29,7 @@ public class CandidateServiceImpl implements CandidateService {
                 .email(request.email())
                 .age(request.age())
                 .yearsOfExperience(request.yearsOfExperience())
+                .phone(request.phone())
                 .build();
         return candidateRepository.save(candidate);
     }
